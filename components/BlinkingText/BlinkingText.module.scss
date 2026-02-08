@@ -1,0 +1,35 @@
+.blinkingTextContainer {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+  font-family: 'Krona One', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 43px;
+}
+
+.blinkingText {
+  animation: blinking 0.9s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    color: #4E148C;
+  }
+
+  49% {
+    color: transparent;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  99% {
+    color: transparent;
+  }
+
+  100% {
+    color: #4E148C;
+  }
+}
