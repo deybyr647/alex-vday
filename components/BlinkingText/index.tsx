@@ -17,7 +17,6 @@ const BlinkingText = () => {
     "Peace",
     "Rock",
     "Muse",
-    "Alexandria",
   ];
 
   const [word, setWord] = useState("Alexandria");
