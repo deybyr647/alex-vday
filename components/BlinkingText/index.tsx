@@ -22,14 +22,19 @@ const BlinkingText = () => {
   const [word, setWord] = useState("Alexandria");
 
   useEffect(() => {
-    console.log("calling effect");
     setInterval(() => {
       setWord(words[Math.floor(Math.random() * words.length)]);
     }, 2000);
   }, []);
 
   return (
-    <h2 className={styles.blinkingText + " is-size-2 has-text-centered m-2 " + font.className}>
+    <h2
+      className={
+        styles.blinkingText +
+        " is-size-2 has-text-centered m-2 " +
+        font.className
+      }
+    >
       {word}
     </h2>
   );
