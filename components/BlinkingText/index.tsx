@@ -6,7 +6,7 @@ const font = Beth_Ellen({ subsets: ["latin"], weight: "400" });
 
 const BlinkingText = () => {
   let words: string[] = [
-    "Lover",
+    "Love",
     "Princess",
     "Gorgeous",
     "Queen",
@@ -16,7 +16,9 @@ const BlinkingText = () => {
     "World",
     "Peace",
     "Rock",
-    "Muse",
+    "Lovie",
+    "Model",
+    "Universe",
   ];
 
   const [word, setWord] = useState("Alexandria");

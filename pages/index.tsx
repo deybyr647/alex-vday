@@ -25,7 +25,7 @@ const Home = () => {
         "container is-flex is-flex-direction-column is-align-items-center p-5"
       }
     >
-      <Metadata/>
+      <Metadata />
 
       <div
         className={
