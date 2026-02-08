@@ -1,0 +1,24 @@
+$berry: #993955;
+
+.blinkingText {
+  animation: heartbeat 0.9s infinite;
+  color: $berry;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  20% {
+    transform: scale(1.15); /* First beat: grow larger */
+  }
+  40% {
+    transform: scale(1); /* Return to normal */
+  }
+  60% {
+    transform: scale(1.15); /* Second beat: grow larger again */
+  }
+  100% {
+    transform: scale(1); /* Return to normal at the end of the cycle */
+  }
+}

@@ -1,0 +1,33 @@
+.tip1 {
+  animation: tip-first 0.5s forwards ease-out;
+}
+
+.tip2 {
+  animation: tip-second 0.5s forwards ease-out;
+}
+
+.fallDown {
+  animation: fall-final 1.2s forwards ease-in;
+  pointer-events: none; // Disable further clicks once it starts falling
+}
+
+// First click: tilts slightly
+@keyframes tip-first {
+  100% { transform: rotate(15deg); }
+}
+
+// Second click: tilts further and shifts slightly to the side
+@keyframes tip-second {
+  0% { transform: rotate(15deg); }
+  100% { transform: rotate(45deg) translateX(10px); }
+}
+
+// Third click: tumbles and falls off-screen
+@keyframes fall-final {
+  0% { transform: rotate(45deg) translateX(10px); }
+  20% { transform: rotate(60deg) translateX(15px); }
+  100% {
+    transform: translateY(100vh) rotate(120deg);
+    opacity: 0;
+  }
+}

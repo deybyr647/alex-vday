@@ -1,0 +1,17 @@
+$lavender-grey: #8E9AAF;
+$thistle: #CBC0D3;
+$soft-blush: #EFD3D7;
+$lavender-veil: #FEEAFA;
+$lavender: #DEE2FF;
+$berry: #993955;
+
+$custom-colors: (
+        "lavender-grey": ($lavender-grey, #fff), // (color, light-invert-color)
+        "thistle": ($thistle, #000),
+        "soft-blush": ($soft-blush, #000),
+        "lavender-veil": ($lavender-veil, #000),
+        "lavender": ($lavender, #000),
+        "berry": ($berry, #fff)
+);
+
+@use "bulma/bulma";
