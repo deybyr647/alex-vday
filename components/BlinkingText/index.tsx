@@ -21,7 +21,7 @@ const BlinkingText = () => {
     "Universe",
   ];
 
-  const [word, setWord] = useState("Alexandria");
+  const [word, setWord] = useState("Lovie");
 
   useEffect(() => {
     setInterval(() => {
