@@ -1,35 +1,21 @@
-.blinkingTextContainer {
-  display: flex;
-  text-align: center;
-  align-self: center;
-  font-size: 18px;
-  font-family: 'Krona One', sans-serif;
-  margin-top: 15px;
-  margin-bottom: 43px;
-}
-
 .blinkingText {
-  animation: blinking 0.9s infinite;
+  animation: heartbeat 0.9s infinite;
 }
 
-@keyframes blinking {
+@keyframes heartbeat {
   0% {
-    color: #4E148C;
+    transform: scale(1); /* Original size */
   }
-
-  49% {
-    color: transparent;
+  20% {
+    transform: scale(1.15); /* First beat: grow larger */
   }
-
-  50% {
-    color: transparent;
+  40% {
+    transform: scale(1); /* Return to normal */
   }
-
-  99% {
-    color: transparent;
+  60% {
+    transform: scale(1.15); /* Second beat: grow larger again */
   }
-
   100% {
-    color: #4E148C;
+    transform: scale(1); /* Return to normal at the end of the cycle */
   }
 }

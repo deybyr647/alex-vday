@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
 import styles from "./BlinkingText.module.scss";
+import { Beth_Ellen } from "next/font/google";
+const font = Beth_Ellen({ subsets: ["latin"], weight: "400" });
 
 const BlinkingText = () => {
   let words: string[] = [
@@ -13,7 +15,7 @@ const BlinkingText = () => {
     "Everything",
     "World",
     "Peace",
-    "Anchor",
+    "Rock",
     "Muse",
     "Alexandria",
   ];
@@ -24,15 +26,13 @@ const BlinkingText = () => {
     console.log("calling effect");
     setInterval(() => {
       setWord(words[Math.floor(Math.random() * words.length)]);
-    }, 2500);
+    }, 2000);
   }, []);
 
   return (
-    <div className={styles.blinkingTextContainer}>
-      <h2>
-        <span className={styles.blinkingText}>{word}</span>
-      </h2>
-    </div>
+    <h2 className={styles.blinkingText + " is-size-2 has-text-centered m-2 " + font.className}>
+      {word}
+    </h2>
   );
 };
 

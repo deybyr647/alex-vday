@@ -1,7 +1,8 @@
-$puce: #d88c9a;
-$light-orange: #f2d0a9;
-$almond: #f1e3d3;
-$cambridge-blue: #99c1b9;
+$lavender-grey: #8E9AAF;
+$thistle: #CBC0D3;
+$soft-blush: #EFD3D7;
+$lavender-veil: #FEEAFA;
+$lavender: #DEE2FF;
 
 .container {
   width: 100px;
@@ -222,7 +223,7 @@ $cambridge-blue: #99c1b9;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background: rgba(0, 0, 0, 0); //transparent leaves
+  background: $lavender-veil; //transparent leaves
   content: "";
   position: absolute;
   left: -12px;
@@ -234,7 +235,7 @@ $cambridge-blue: #99c1b9;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background: rgba(0, 0, 0, 0); //transparent leaves
+  background: $lavender-veil; //transparent leaves
   content: "";
   position: absolute;
   left: -11px;
