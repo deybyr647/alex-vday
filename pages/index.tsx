@@ -1,16 +1,16 @@
-import Head from "next/head";
 import Image from "next/image";
+import AOS from "aos";
+import { useEffect } from "react";
+import { Beth_Ellen } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
+
+import alex from "../public/alex.jpeg";
+import Form from "@/components/Form";
+import Metadata from "@/components/Metadata";
 import BlinkingText from "@/components/BlinkingText";
 import Rose from "@/components/Rose";
 
-import alex from "../public/alex.jpeg";
-import { Beth_Ellen } from "next/font/google";
-import Form from "@/components/Form";
 const font = Beth_Ellen({ subsets: ["latin"], weight: "400" });
-
-import AOS from "aos";
-import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
@@ -25,6 +25,8 @@ const Home = () => {
         "container is-flex is-flex-direction-column is-align-items-center p-5"
       }
     >
+      <Metadata/>
+
       <div
         className={
           "container is-flex is-align-items-center is-flex-direction-column"
